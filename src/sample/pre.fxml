@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="108.0" layoutY="54.0" text="Infix" />
+      <Label layoutX="108.0" layoutY="100.0" text="Prefix" />
+      <Label layoutX="108.0" layoutY="148.0" text="Postfix" />
+      <TextField fx:id="infix" layoutX="171.0" layoutY="50.0" prefHeight="23.0" prefWidth="227.0" />
+      <TextField fx:id="postfix" layoutX="171.0" layoutY="144.0" prefHeight="23.0" prefWidth="227.0" />
+      <TextField fx:id="prefix" layoutX="171.0" layoutY="96.0" prefHeight="23.0" prefWidth="227.0" />
+      <Button fx:id="translate" layoutX="439.0" layoutY="50.0" mnemonicParsing="false" text="Translate" />
+      <TableView fx:id="prefixView" layoutX="58.0" layoutY="225.0" prefHeight="200.0" prefWidth="303.0">
+        <columns>
+          <TableColumn fx:id="prefixViewOrder" prefWidth="75.0" text="order" />
+          <TableColumn fx:id="prefixViewStep" prefWidth="226.99998474121094" text="step" />
+        </columns>
+      </TableView>
+      <TableView fx:id="prefixValueView" layoutX="389.0" layoutY="225.0" prefHeight="200.0" prefWidth="303.0">
+        <columns>
+          <TableColumn fx:id="prefixValueViewOrder" prefWidth="75.0" text="order" />
+          <TableColumn fx:id="prefixValueViewStep" prefWidth="227.0" text="step" />
+        </columns>
+      </TableView>
+      <TableView fx:id="postfixView" layoutX="58.0" layoutY="456.0" prefHeight="200.0" prefWidth="303.0">
+         <columns>
+            <TableColumn fx:id="postfixViewOrder" prefWidth="75.0" text="order" />
+            <TableColumn fx:id="postfixViewStep" prefWidth="226.99998474121094" text="value" />
+         </columns>
+      </TableView>
+      <TableView fx:id="postfixValueView" layoutX="389.0" layoutY="456.0" prefHeight="200.0" prefWidth="303.0">
+         <columns>
+            <TableColumn fx:id="postfixValueViewOrder" prefWidth="75.0" text="order" />
+            <TableColumn fx:id="postfixValueViewStep" prefWidth="227.0" text="value" />
+         </columns>
+      </TableView>
+      <Label layoutX="439.0" layoutY="100.0" text="value" />
+      <Label layoutX="439.0" layoutY="148.0" text="value" />
+      <TextField fx:id="prefixValue" layoutX="485.0" layoutY="96.0" />
+      <TextField fx:id="postfixValue" layoutX="485.0" layoutY="144.0" />
+      <Button fx:id="clear" layoutX="530.0" layoutY="50.0" mnemonicParsing="false" text="clear" />
+      <Label layoutX="58.0" layoutY="199.0" text="Infix-&gt;Prefix" />
+      <Label layoutX="389.0" layoutY="199.0" text="Prefix-&gt;value" />
+      <Label layoutX="58.0" layoutY="433.0" text="Infix-&gt;Postfix" />
+      <Label layoutX="389.0" layoutY="433.0" text="Postfix-&gt;value" />
+      <Label layoutX="48.0" layoutY="23.0" text="Please enter the Infix " />
+   </children>
+</Pane>
